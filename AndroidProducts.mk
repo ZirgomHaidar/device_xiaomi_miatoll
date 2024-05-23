@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/blaze_miatoll.mk
+    $(LOCAL_DIR)/droidx_miatoll.mk
 
 COMMON_LUNCH_CHOICES := \
-    blaze_miatoll-user \
-    blaze_miatoll-userdebug \
-    blaze_miatoll-eng
+    droidx_miatoll-ap1a-user \
+    droidx_miatoll-ap1a-userdebug \
+    droidx_miatoll-ap1a-eng

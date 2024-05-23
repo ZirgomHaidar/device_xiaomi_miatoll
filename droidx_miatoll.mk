@@ -8,22 +8,18 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common ProjectBlaze stuff.
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
-
 # Inherit from miatoll device
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
+
+# Inherit some common Droidx stuff.
+$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
+DROIDX_BUILD_TYPE := OFFICIAL
+DROIDX_GAPPS := true
 
 # Define bootanimation resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# ProjectBlaze
-BLAZE_BUILD_TYPE := OFFICIAL
-BLAZE_MAINTAINER := clarencelol
-WITH_GAPPS := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-
-PRODUCT_NAME := blaze_miatoll
+PRODUCT_NAME := droidx_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi

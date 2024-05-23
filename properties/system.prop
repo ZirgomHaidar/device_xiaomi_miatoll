@@ -140,3 +140,8 @@ persist.timed.enable=true
 # WFD
 persist.debug.wfd.enable=1
 vendor.sys.video.disable.ubwc=1
+
+# Droidx
+ro.droidx.maintainer=ZirgomHaidar
+ro.droidx.chipset=Snapdragon 720G
+ro.droidx.display_resolution=6.67" IPS LCD 1080x2400
